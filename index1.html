@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <main class="main-section">
+        <nav class="navbar">
+            <h1>Anuj Gupta's Portfolio</h1>
+            <div class="nav-menu">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Let's Connect!!</a>
+            </div>
+        </nav>
+        <section class="head-section">
+            <img class="profile-img" src="./image/profile-picture.jpeg" alt="profile-img">
+            <div class="head-section-details">
+                <h1>Anuj Kumar Gupta</h1>
+                <h3>Sophomore at IET Dr.Ram Manohar Lohia Avadh University,Faizabad</h3>
+                <button class="cv">
+                <a href="https://drive.google.com/file/d/1kT5iU5buRRB7YspbULYdBUXSuMya3cb8/view?usp=sharing"> View CV</a>
+            </button>
+                
+            </div>
+
+        </section>
+        <section class="about" id="about">
+            <h1>About Me</h1>
+            <p>I am Sophomore at IET Dr.Ram Manohar Lohia Avadh University,Ayodhya pursuing B.Tech in Information Technology. I am a tech enthusiast with the hands in MERN Development. I am also a 2 Star rated competitive programmer at CodeChef with the best global rank of 450 in feb starters76, 2023 organized by Codechef.
+            Apart form this i keep engaging myself in various co-curricular activities happening around. </p>
+        </section>
+        <section class="skills-projects">
+            <div class="skills" id="skills">
+                <h1 class="cards">Skills</h1>
+                <img title="C++" src="./image/c++.png" alt="">
+                <img title="C" src="./image/c.png" alt="">
+                <img title="Python" src="./image/python.png" alt="">
+                <img title="HTML" src="./image/html.png" alt="">
+                <img title="CSS" src="./image/css.png" alt="">
+                <img title="JavaScript" src="/image/js.png" alt="">
+                <img title="React" src="/image/react.png" alt="">
+                <img title="Node.JS" src="/image/node.png" alt="">
+                <img title="Express" src="/image/express.png" alt="">
+                <img title="MongoDB" src="/image/mongo.png" alt="">
+            </div>
+
+            <div class="projects" id="projects">
+                <h1 class="cards">Projects</h1>
+                <div class="project-container">
+                    <img src="/image/todo.jpg" alt="">
+                    <div class="project-disc">
+                        <a href="https://github.com/a-nuj1/TO_DO-App" target="_blank">
+                            <h4>ToDo_App</h4>
+                        </a>
+                        <p>Developed a ToDo_App WebApplication. <br> Work Month:july 2023</p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <img src="/image/tic-toe.jpeg" alt="">
+                    <div class="project-disc">
+                        <a href="https://github.com/a-nuj1" target="_blank"><h4>Tic-Tac-Toe</h4></a>
+                        <p>Developed a tic-tac-toe game to play virtually. <br>Team size:1 | Work Month:May 2023</p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <img src="/image/music.png" alt="">
+                    <div class="project-disc">
+                        <a href="https://github.com/a-nuj1" target="_blank">
+                            <h4>Music Player Clone</h4>
+                        </a>
+                        <p>Developed a Clone Of Music Player. <br> Work Month:April 2023</p>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <img src="/image/cal.png" alt="">
+                    <div class="project-disc">
+                        <a href="https://github.com/a-nuj1" target="_blank"> <h4>Simple Calculator</h4></a>
+                        <p>Developed a Simple Calcultor <br>Work Month: May 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Let's Connect!</h1>
+            <form action="https://formsubmit.co/anujgupta1532003@gmail.com" method="POST" class="formGroup">
+                <!-- <label for='name'></label><br/> -->
+              <input type='text' id='name' placeholder='Full Name'/><br>
+              <!-- <label for='email'>Email</label><br/> -->
+              <!-- <input type='text' id='email' placeholder='Email'/><br> -->
+              <input type="email" name="email" placeholder="Email Address">
+              <label for='message'>Message</label><br/>
+              <textarea placeholder="Send some message!" id="message" name="Message!" rows="4" cols="50"></textarea>
+              <!-- <input type="email" name="email" placeholder="Email Address"> -->
+              <button class='submitButton' onClick={submit()}>Connect</button>
+              <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
